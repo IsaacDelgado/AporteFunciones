@@ -13,9 +13,7 @@ import javax.swing.JOptionPane;
  * @author Isaac
  */
 public class ejercicio8 {
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         int contador=0;
