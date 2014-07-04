@@ -6,8 +6,6 @@
 
 package aportefunciones;
 
-import java.util.Scanner;
-
 /**
  *
  * @author V1C70R MU3N735
@@ -16,15 +14,12 @@ public class ejercicio1 {
     
     public int ej1(int x,int y){
        
-        Scanner entrada=new Scanner(System.in);
+     
         int n1=7, n2=6, resultFuncion=0;
         int[] s1=new int[255];
         int[] s2=new int[255];
         int[] sResult=new int[255];
-        System.out.println("Ingrese Valor X");
-        x = entrada.nextInt();
-        System.out.println("Ingrese Valor Y");
-        y= entrada.nextInt();
+
         
         for (int i = 0; i <= 254; i++) 
         {            
@@ -82,5 +77,6 @@ public class ejercicio1 {
         return (resultFuncion);       
         
     }
+   
     
 }

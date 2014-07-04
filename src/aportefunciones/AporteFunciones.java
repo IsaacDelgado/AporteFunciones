@@ -6,6 +6,8 @@
 
 package aportefunciones;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Isaac
@@ -17,9 +19,19 @@ public class AporteFunciones {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ejercicio1 ejr1=new ejercicio1();
-        int x=0,y=0;
-        ejr1.ej1(x, y);
+    ejerc1();
+        
+    }
+
+    public static void ejerc1(){
+    ejercicio1 ejr1=new ejercicio1();
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Ingrese Valor X");
+        int x = entrada.nextInt();
+        System.out.println("Ingrese Valor Y");
+        int y= entrada.nextInt();
+
+        System.out.println("El resultado de la función es: "+ejr1.ej1(x,y));
     }
     
 }
