@@ -6,18 +6,19 @@
 
 package aportefunciones;
 
-import java.awt.Event;
+
 
 /**
  *
  * @author V1C70R MU3N735
  */
-public class ejecicio3 {
+public class ejercicio3 {
     public int ej3(int x,int y){
         int[] f1=new int[y];
+        int result = 0;
         if (x<=0 ||y<=0 || x>255||y>255 )
         {
-            return -1;
+            result= -1;
         }
         else
         {
@@ -34,13 +35,13 @@ public class ejecicio3 {
             { 
               if(i==(y-1))
                 {
-                    return (f1[i]);
+                    result= (f1[i]);
                    
                 }  
               
             }
         }
-       return f1[255] ;
+       return (int) result ;
     }
 }
 

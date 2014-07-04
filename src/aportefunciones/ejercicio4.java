@@ -16,13 +16,13 @@ public class ejercicio4 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        String s1 ;
-        String s2 ;
+    public String ej4 (String s1,String s2){
+        
+//        String s1 ;
+//        String s2 ;
         int tamano1,tamano2;
-        s1 =JOptionPane.showInputDialog(null,"Ingrese una frase","Frase 1",JOptionPane.QUESTION_MESSAGE);
-        s2= JOptionPane.showInputDialog(null,"Ingrese otra frase","Frase 2",JOptionPane.QUESTION_MESSAGE);
+//        s1 =JOptionPane.showInputDialog(null,"Ingrese una frase","Frase 1",JOptionPane.QUESTION_MESSAGE);
+//        s2= JOptionPane.showInputDialog(null,"Ingrese otra frase","Frase 2",JOptionPane.QUESTION_MESSAGE);
         s1=s1.toLowerCase();
         s2=s2.toLowerCase();
         tamano2=s2.length();
@@ -46,7 +46,8 @@ public class ejercicio4 {
                   salida=salida+cadenaS1[i]; 
                    //System.out.println(" " + cadenaS1[i]);
                }
-        JOptionPane.showMessageDialog(null,salida,"Resultado",JOptionPane.INFORMATION_MESSAGE);
+        return salida;
+      //  JOptionPane.showMessageDialog(null,salida,"Resultado",JOptionPane.INFORMATION_MESSAGE);
     }   
     
 }
