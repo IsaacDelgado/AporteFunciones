@@ -26,7 +26,7 @@ public class AporteFunciones {
         
         int op = entrada.nextInt();
         
-        switch ( op ) {
+     switch ( op ) {
       case 1:
            ejerc1();
            break;
@@ -42,25 +42,31 @@ public class AporteFunciones {
       case 5:
            ejerc5();
            break;
-//       case 6:
-//           ejerc6();
-//           break;
-//       case 7:
-//           ejerc7();
-//           break;
+       case 6:
+           ejerc6();
+           break;
+       case 7:
+           ejerc7();
+           break;
+       case 8:
+           ejerc8();
+           break;
+       case 9:
+           ejerc9();
+           break;
+       case 10:
+           ejerc10();
+           break;
+      case 11:
+           ejerc11();
+           break;
       default:
            System.out.println("*********Error********\n"
                             + "Entrada fuera de Rango" );
            break;
       }
         
-        
-        
-        
-//        ejerc1();
-//        ejerc2();
-//        ejerc3();
-//        ejerc4();
+
         
     }
      public static int PedirX(){
@@ -127,7 +133,51 @@ public class AporteFunciones {
          enunciados enunc=new enunciados();
         System.out.println(enunc.enun5());
         int arreglo[]=new int [PedirX()];
-        System.out.println(ejr5.ej5(arreglo));
+        System.out.println("El resultado de la función es: "+ejr5.ej5(arreglo));
+    }
+        public static void ejerc6(){
+         ejercicio6 ejr6=new ejercicio6();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun6());
+        String s1 = Cadena1();
+        System.out.println("El resultado de la función es: "+ejr6.ej6(s1));
+    }
+        public static void ejerc7(){
+         ejercicio7 ejr7=new ejercicio7();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun7());
+        String s1 = Cadena1();
+        System.out.println("El resultado de la función es: "+ejr7.ej7(s1));
+    }
+        public static void ejerc8(){
+         ejercicio8 ejr8=new ejercicio8();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun8());
+        String s1 = Cadena1();
+        System.out.println("El resultado de la función es: "+ejr8.ej8(s1));
+    }
+         public static void ejerc9(){
+         ejercicio9 ejr9=new ejercicio9();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun9());
+        int x = PedirX();
+        System.out.println("El resultado de la función es: "+ejr9.ej9(x));
+    }
+        public static void ejerc10(){
+         ejercicio10 ejr10=new ejercicio10();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun10());
+        int x = PedirX();
+        int y = PedirY();
+        System.out.println("El resultado de la función es: "+ejr10.ej10(x,y));
+    }
+        public static void ejerc11(){
+         ejercicio11 ejr11=new ejercicio11();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun11());
+        int [][]matriz = new int [PedirX()][PedirY()];
+        
+        System.out.println("El resultado de la función es: "+ejr11.ej11(matriz));
     }
 
 

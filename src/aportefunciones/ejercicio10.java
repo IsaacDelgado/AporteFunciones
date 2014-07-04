@@ -6,7 +6,7 @@
 
 package aportefunciones;
 
-import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -14,11 +14,10 @@ import javax.swing.JOptionPane;
  */
 public class ejercicio10 {
    
-    public static void main(String[] args) {
-        // TODO code application logic here}
-        int x,y,sumaResiduo=0;
-        x=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese un número","Número Inicial",JOptionPane.QUESTION_MESSAGE));
-        y=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese otro número","Número Final",JOptionPane.QUESTION_MESSAGE));
+    public int ej10(int x,int y) {
+        
+        int sumaResiduo=0;
+        
          
         for (int i = x; i <= y; i++) {
             sumaResiduo=0; 
@@ -31,12 +30,14 @@ public class ejercicio10 {
                 }
             }
             if (sumaResiduo==i) {
-                JOptionPane.showMessageDialog(null, "El primer número perfecto ente "+ x+" y "+y+ " es = " +sumaResiduo);
+                
                 i=y;
             }
         }
             if(sumaResiduo==0) {
-                JOptionPane.showMessageDialog(null, "no hay números perfectos ente "+ x+" y "+y);
+                System.out.println("no hay números perfectos ente "+ x+" y "+y);
             }
+            
+            return sumaResiduo;
     }
 }

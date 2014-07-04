@@ -6,7 +6,7 @@
 
 package aportefunciones;
 
-import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -14,13 +14,12 @@ import javax.swing.JOptionPane;
  */
 public class ejercicio8 {
     
-    public static void main(String[] args) {
+    public int ej8(String s1) {
         // TODO code application logic here
         int contador=0;
-        String s = JOptionPane.showInputDialog("Ingrese una frase","Escribir la frase aquí");
-        s=" "+s;
-        int tamano= s.length();
-        char[] cadena=s.toCharArray();
+        s1=" "+s1;
+        int tamano= s1.length();
+        char[] cadena=s1.toCharArray();
         
 
         for (int i = 0; i < tamano; i++) {
@@ -37,11 +36,12 @@ public class ejercicio8 {
            
         }
         if (contador==0) {
-                    JOptionPane.showMessageDialog(null, "No hay Palabras que contengas la letra 'a'","Lo sentimos",JOptionPane.ERROR_MESSAGE);
+            System.out.println("No hay Palabras que contengas la letra 'a'");
         }
         else{
-        JOptionPane.showMessageDialog(null, "El número de palabras que contienen la letra a es : "+contador,"Gracias por usar este Sistema",JOptionPane.PLAIN_MESSAGE);
+            System.out.println("El número de palabras que contienen la letra a es : ");
         }
+        return contador;
     }
     
 }

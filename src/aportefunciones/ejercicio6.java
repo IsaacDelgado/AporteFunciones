@@ -6,7 +6,7 @@
 
 package aportefunciones;
 
-import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -16,16 +16,18 @@ public class ejercicio6 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public String ej6(String s1){
         String Salida="";
-        String frase=JOptionPane.showInputDialog(null,"Ingrese una frase","--->Ingrese la Frase Aquí<---");
-        String []cadena=frase.split(" ");
+        
+        String []cadena=s1.split(" ");
         for(int i=cadena.length-1;i>=0;i--)
         {
             Salida=Salida+cadena[i]+" ";            
         }
-        JOptionPane.showMessageDialog(null,"Frase Original ->"+ frase+"\n"+"Frase Invertida ->"+Salida,"Invertir Frase",JOptionPane.PLAIN_MESSAGE);
-    }
+        
+        System.out.println("Frase Original ->\n"+ s1+"\n"+"Frase Invertida ->");
+        return Salida;    
+}
+
     
 }
