@@ -17,6 +17,9 @@ public class AporteFunciones {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ejercicio1 ejr1=new ejercicio1();
+        int x=0,y=0;
+        ejr1.ej1(x, y);
     }
     
 }
