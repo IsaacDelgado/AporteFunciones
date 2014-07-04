@@ -60,6 +60,15 @@ public class AporteFunciones {
       case 11:
            ejerc11();
            break;
+//      case 12:
+//           ejerc12();
+//           break;
+//     case 13:
+//           ejerc13();
+//           break;
+     case 14:
+           ejerc14();
+           break;
       default:
            System.out.println("*********Error********\n"
                             + "Entrada fuera de Rango" );
@@ -81,6 +90,12 @@ public class AporteFunciones {
        System.out.println("Ingrese Valor Y");
        int y= entrada.nextInt();
        return y ;
+        }
+    public static int PedirZ(){
+     Scanner entrada=new Scanner(System.in);
+       System.out.println("Ingrese Valor Z");
+       int z= entrada.nextInt();
+       return z ;
         }
         public static String Cadena1(){
      Scanner entrada=new Scanner(System.in);
@@ -178,6 +193,15 @@ public class AporteFunciones {
         int [][]matriz = new int [PedirX()][PedirY()];
         
         System.out.println("El resultado de la función es: "+ejr11.ej11(matriz));
+    }
+        public static void ejerc14(){
+         ejercicio14 ejr14=new ejercicio14();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun14());
+        int x = PedirX();
+        int y = PedirY();
+        int z=PedirZ();
+        System.out.println("El resultado de la función es: "+ejr14.ej14(x,y,z));
     }
 
 

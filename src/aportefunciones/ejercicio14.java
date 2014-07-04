@@ -6,23 +6,18 @@
 
 package aportefunciones;
 
-import java.util.Scanner;
+
 
 /**
  *
  * @author Isaac
  */
 public class ejercicio14 {
-     public static void main(String[] args) {
+     public int ej14(int x,int y,int z) {
         // TODO code application logic here
-        int x=0, y=0, z=0,res1=0, res2=0, aux=0; ;
-        Scanner ingreso = new Scanner(System.in);
-        System.out.print("Ingrese le valor de x : ");
-        x = ingreso.nextInt();
-        System.out.print("Ingrese le valor de y : ");
-        y = ingreso.nextInt();
-        System.out.print("Ingrese le valor de z : ");
-        z = ingreso.nextInt();       
+        int res1=0, res2=0, aux=0; ;
+
+      
         if(z%2!=0) 
         {            
             z=z+1;
@@ -46,6 +41,8 @@ public class ejercicio14 {
                 x++;
                 y++;                           
         }
-        System.out.println(res1+""+res2+" ");          
+        
+        System.out.println(res1+""+res2+" ");  
+        return res1+res2;
     }
 }
