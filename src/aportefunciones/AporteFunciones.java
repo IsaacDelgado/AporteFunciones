@@ -19,7 +19,8 @@ public class AporteFunciones {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    ejerc1();
+     //   ejerc1();
+        ejerc3();
         
     }
 
@@ -32,6 +33,18 @@ public class AporteFunciones {
         int y= entrada.nextInt();
 
         System.out.println("El resultado de la función es: "+ejr1.ej1(x,y));
+    }
+    
+    
+    public static void ejerc3(){
+    ejecicio3 ejr3=new ejecicio3();
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Ingrese Valor X");
+        int x = entrada.nextInt();
+        System.out.println("Ingrese Valor Y");
+        int y= entrada.nextInt();
+
+        System.out.println("El resultado de la función es: "+ejr3.ej3(x,y));
     }
     
 }
