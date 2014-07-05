@@ -6,6 +6,7 @@
 
 package aportefunciones;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -63,15 +64,34 @@ public class AporteFunciones {
 //      case 12:
 //           ejerc12();
 //           break;
-//     case 13:
-//           ejerc13();
-//           break;
+     case 13:
+           ejerc13();
+           break;
      case 14:
            ejerc14();
            break;
+//     case 15:
+//           ejerc15();
+//           break;
+     case 16:
+           ejerc16();
+           break;
+    case 17:
+           ejerc17();
+           break;
+    case 18:
+           ejerc18();
+           break;
+        
       default:
-           System.out.println("*********Error********\n"
+          if (op>24||op<=0) {
+              System.out.println("*********Error********\n"
                             + "Entrada fuera de Rango" );
+          }else{
+          System.out.println("**********Error*********\n"
+                            + "Ejercicio No Encontrado" );
+          }
+           
            break;
       }
         
@@ -83,8 +103,11 @@ public class AporteFunciones {
         System.out.println("Ingrese Valor X");
         int x = entrada.nextInt();
         return x ;
-        
-        }
+     }
+    public int valorx(){return PedirX();}
+    public int valory(){return PedirY();}
+    public int valorz(){return PedirZ();}
+    
     public static int PedirY(){
      Scanner entrada=new Scanner(System.in);
        System.out.println("Ingrese Valor Y");
@@ -193,6 +216,14 @@ public class AporteFunciones {
         int [][]matriz = new int [PedirX()][PedirY()];
         
         System.out.println("El resultado de la función es: "+ejr11.ej11(matriz));
+        }
+        public static void ejerc13(){
+         ejercicio13 ejr13=new ejercicio13();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun13());
+        int []array = new int [PedirX()];
+        
+        System.out.println("El resultado de la función es: "+Arrays.toString(ejr13.ej13(array)));
     }
         public static void ejerc14(){
          ejercicio14 ejr14=new ejercicio14();
@@ -203,7 +234,32 @@ public class AporteFunciones {
         int z=PedirZ();
         System.out.println("El resultado de la función es: "+ejr14.ej14(x,y,z));
     }
-
+         public static void ejerc16(){
+         ejercicio16 ejr16=new ejercicio16();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun16());
+        int x = PedirX();
+        int y = PedirY();
+        int z=PedirZ();
+        System.out.println("El resultado de la función es: "+ejr16.ej16(x,y,z));
+    }
+         public static void ejerc17(){
+         ejercicio17 ejr17=new ejercicio17();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun17());
+        String s1=Cadena1();
+        System.out.println("El resultado de la función es: "+ejr17.ej17(s1));
+         }
+        public static void ejerc18(){
+         ejercicio18 ejr18=new ejercicio18();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun18());
+        String array[]= new String [PedirX()];
+            for (int i = 0; i < array.length; i++) {
+               array[i]= Cadena1();
+            }
+        System.out.println("El resultado de la función es: "+Arrays.toString(ejr18.ej18(array)));
+         }
 
     
 }

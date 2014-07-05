@@ -6,18 +6,15 @@
 
 package aportefunciones;
 
-import javax.swing.JOptionPane;
+
 
 /**
  *
  * @author Isaac
  */
 public class ejercicio16 {
-    public static void main(String[] args) {
-        // TODO code application logic here
-        int x=Integer.parseInt(JOptionPane.showInputDialog("Ingrese Un Valor para X"));
-        int y=Integer.parseInt(JOptionPane.showInputDialog("Ingrese Un Valor para Y"));
-        int z=Integer.parseInt(JOptionPane.showInputDialog("Ingrese Un Valor para Z"));
+    public int ej16(int x,int y,int z) {
+        
         int [] cadena = null;
         
         int valor=z-y;
@@ -48,7 +45,7 @@ public class ejercicio16 {
         }
         
         
-        JOptionPane.showMessageDialog(null, resltado);
+        return ( resltado);
     }
     
 }
