@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class ejercicio5 {
     
        
-        public int ej5(int arreglo[]){
+        public int [] ej5(int arreglo[]){
             Scanner entrada=new Scanner(System.in);
         
         
@@ -59,5 +59,5 @@ public class ejercicio5 {
               
             
         }
-    return  (int) result;
+    return  arreglo;
 }}

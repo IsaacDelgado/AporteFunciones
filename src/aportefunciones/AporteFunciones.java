@@ -82,7 +82,15 @@ public class AporteFunciones {
     case 18:
            ejerc18();
            break;
-        
+    case 19:
+           ejerc19();
+           break;
+    case 20:
+           ejerc20();
+           break;
+   case 21:
+           ejerc21();
+           break;
       default:
           if (op>24||op<=0) {
               System.out.println("*********Error********\n"
@@ -171,7 +179,7 @@ public class AporteFunciones {
          enunciados enunc=new enunciados();
         System.out.println(enunc.enun5());
         int arreglo[]=new int [PedirX()];
-        System.out.println("El resultado de la función es: "+ejr5.ej5(arreglo));
+        System.out.println("El resultado de la función es: "+Arrays.toString(ejr5.ej5(arreglo)));
     }
         public static void ejerc6(){
          ejercicio6 ejr6=new ejercicio6();
@@ -259,6 +267,36 @@ public class AporteFunciones {
                array[i]= Cadena1();
             }
         System.out.println("El resultado de la función es: "+Arrays.toString(ejr18.ej18(array)));
+         }
+        public static void ejerc19(){
+         ejercicio19 ejr19=new ejercicio19();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun19());
+        int x=PedirX();
+        System.out.println("El resultado de la función es: "+(ejr19.ej19(x)));
+         }
+        public static void ejerc20(){
+         ejercicio20 ejr20=new ejercicio20();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun20());
+        int x=PedirX();
+        System.out.println("El resultado de la función es: "+(ejr20.ej20(x)));
+         }
+        public static void ejerc21(){
+         ejercicio21 ejr21=new ejercicio21();
+         enunciados enunc=new enunciados();
+        System.out.println(enunc.enun21());
+            
+        int x=PedirX();
+        int y=PedirY();
+        String matriz[][]=new String [x][y];
+            for (int i = 0; i < x; i++) {
+                for (int j = 0; j < y; j++) {
+                    matriz[i][j]=Cadena1();
+                }
+            }
+            
+        System.out.println("El resultado de la función es: "+(ejr21.ej21(matriz)));
          }
 
     
